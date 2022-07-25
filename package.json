@@ -1,0 +1,19 @@
+{
+  "name": "menu-board-api",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "serve": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.1",
+    "mssql": "^8.1.2",
+    "nodemon": "^2.0.19",
+    "os": "^0.1.2"
+  }
+}
