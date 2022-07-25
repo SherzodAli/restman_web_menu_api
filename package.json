@@ -12,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.1",
+    "menu-board-api": "file:",
     "mssql": "^8.1.2",
     "nodemon": "^2.0.19",
     "os": "^0.1.2"
