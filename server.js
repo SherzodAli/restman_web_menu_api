@@ -17,7 +17,6 @@ app.listen(PORT, () => {
     console.log(`IP - ${getIP()}`)
 })
 
-const sleep = ms => new Promise(resolve => setTimeout(resolve, ms))
 
 app.get('/', async (req, res) => {
     res.header('Access-Control-Allow-Origin', '*')
@@ -34,11 +33,6 @@ app.get('/dishes', async (req, res) => {
     res.send({menuGroups, groupName, menuDishes})
 })
 
-app.get('/dishe', async (req, res) => {
-    res.header('Access-Control-Allow-Origin', '*')
-    const menuDishes = await getDishesInfo([741, 962, 901])
-    res.send(menuDishes)
-})
 
 sql.connect(DB_CONFIG, (err, pool) => {
     if (err) return console.error(err)
