@@ -1,5 +1,5 @@
 import express from 'express'
-import sql from 'mssql'
+import sql from 'mssql/msnodesqlv8.js'
 import {DB_CONFIG} from './config.js'
 import {getIP} from './ip.js'
 
