@@ -33,8 +33,9 @@ app.get('/dishes', async (req, res) => {
     res.send({menuGroups, groupName, menuDishes})
 })
 
+let config = "Server=localhost,1433;Database=Restman;User Id=sa;Password=25121008;Encrypt=true;Trust Server Certificate=true"
 
-sql.connect(DB_CONFIG, (err, pool) => {
+sql.connect(config, (err, pool) => {
     if (err) return console.error(err)
 
     console.log('DB connection established - starting web server')

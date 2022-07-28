@@ -9,3 +9,6 @@ export const DB_CONFIG = {
         trustServerCertificate: true
     }
 }
+
+// windows auth
+// run server cmd на фоне
