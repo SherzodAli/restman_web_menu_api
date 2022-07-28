@@ -35,7 +35,7 @@ app.get('/dishes', async (req, res) => {
 
 let config = "Server=localhost,1433;Database=Restman;User Id=sa;Password=25121008;Encrypt=true;Trust Server Certificate=true"
 
-sql.connect(config, (err, pool) => {
+sql.connect(DB_CONFIG, (err, pool) => {
     if (err) return console.error(err)
 
     console.log('DB connection established - starting web server')
