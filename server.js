@@ -1,7 +1,6 @@
 import express from 'express'
-import sql from 'mssql/msnodesqlv8.js'
+import sql from 'mssql'
 import {DB_CONFIG} from './config.js'
-import {getIP} from './ip.js'
 
 const app = express()
 const PORT = process.env.PORT ?? 8000
@@ -12,11 +11,7 @@ const DISH = 'Блюда'
 app.use(express.json())
 app.use(express.urlencoded({extended: false}))
 
-app.listen(PORT, () => {
-    console.log(`It's alive on http://localhost:${PORT}`)
-    console.log(`IP - ${getIP()}`)
-})
-
+app.listen(PORT, () => console.log(`It's alive on http://localhost:${PORT}`))
 
 app.get('/', async (req, res) => {
     res.header('Access-Control-Allow-Origin', '*')
@@ -32,8 +27,6 @@ app.get('/dishes', async (req, res) => {
     const menuDishes = await getMenuDishes(partOfMenu)
     res.send({menuGroups, groupName, menuDishes})
 })
-
-let config = "Server=localhost,1433;Database=Restman;User Id=sa;Password=25121008;Encrypt=true;Trust Server Certificate=true"
 
 sql.connect(DB_CONFIG, (err, pool) => {
     if (err) return console.error(err)
