@@ -3,7 +3,7 @@ import sql from 'mssql'
 import {DB_CONFIG} from './config.js'
 
 const app = express()
-const PORT = process.env.PORT ?? 8000
+const PORT = 8000
 
 const FOLDER = 'Папка'
 const DISH = 'Блюда'
