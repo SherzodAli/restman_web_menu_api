@@ -2,7 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="61ffcbd7-7e7e-4c72-a0bb-c8aaeedc1f1b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../interface/src/static/bg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../interface/src/utils/theme.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" afterPath="$PROJECT_DIR$/server.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/Background/Background.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/Background/Background.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/DishItem/DishItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/DishItem/DishItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/DishItem/DishItem.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/DishItem/DishItem.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/DishItem/DishItemOld.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/DishList/DishList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/DishList/DishList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/DishList/DishList.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/DishList/DishList.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/GroupItem/GroupItem.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/GroupItem/GroupItem.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/GroupItem/GroupItem.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/GroupItem/GroupItem.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/Menu/Menu.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/Menu/Menu.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/components/Menu/Menu.module.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/components/Menu/Menu.module.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../interface/src/static/styles.sass" beforeDir="false" afterPath="$PROJECT_DIR$/../interface/src/static/styles.sass" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +39,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../interface" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -35,14 +50,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "javascript.nodejs.core.library.configured.version": "16.16.0",
+    "javascript.nodejs.core.library.typings.version": "16.11.56",
+    "last_opened_file_path": "D:/Projects/commercial/ferrosoft/Restman/Restman mobile/menu-board-web/interface/src/static",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\PyCharm 2022.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\commercial\ferrosoft\Restman\Restman mobile\menu-board-web\interface\src\static" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projects\commercial\ferrosoft\Restman\Restman mobile\menu-board-web\interface\src\utils" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -53,7 +80,10 @@
       <updated>1658772328059</updated>
       <workItem from="1658772330348" duration="600000" />
       <workItem from="1658835872986" duration="9836000" />
-      <workItem from="1659032064556" duration="2438000" />
+      <workItem from="1659032064556" duration="4244000" />
+      <workItem from="1660373245517" duration="2132000" />
+      <workItem from="1660555308944" duration="64000" />
+      <workItem from="1661427081927" duration="19591000" />
     </task>
     <servers />
   </component>

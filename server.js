@@ -1,6 +1,7 @@
 import express from 'express'
 import sql from 'mssql'
 import {DB_CONFIG} from './config.js'
+import fs from 'fs'
 
 const app = express()
 const PORT = 8000
@@ -28,6 +29,14 @@ app.get('/dishes', async (req, res) => {
     res.send({menuGroups, groupName, menuDishes})
 })
 
+app.get('/bg', async (req, res) => {
+    res.header('Access-Control-Allow-Origin', '*')
+    let bg = await getSettingBgImg()
+    bg = isFileExists(bg) ? bg : null
+    let img = bg ? bg.split('\\')[bg.split('\\').length - 1] : null
+    res.send(img)
+})
+
 sql.connect(DB_CONFIG, (err, pool) => {
     if (err) return console.error(err)
 
@@ -41,6 +50,11 @@ async function getMenuBoard(partOfMenu) {
         `EXEC [dbo].[procCreateMenuButtonsForMenuboard] ${partOfMenu}`
     )
     return menuBoard.recordset
+}
+
+async function getSettingBgImg() {
+    const settings = await sql.query('EXEC [dbo].[procSettingsSel] @LogoEnabled=1')
+    return settings.recordset[0]?.electronicMenuBackgroundImage
 }
 
 async function getMenuGroups(partOfMenu) {
@@ -111,7 +125,16 @@ function getDishWithPhotoPacked(dishInfo) {
     return dishes
 }
 
+function isFileExists(file) {
+    // return fs.promises.access(file, fs.constants.F_OK)
+    //          .then(() => true)
+    //          .catch(() => false)
+
+    return fs.existsSync(file)
+}
+
 function isObjectInArray(fieldName, value, array) {
     const index = array.findIndex(el => el[fieldName] === value)
     return index !== -1
 }
+
